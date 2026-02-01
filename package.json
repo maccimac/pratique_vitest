@@ -1,13 +1,14 @@
 {
-  "name": "deep-merge",
+  "name": "vueschool-example-spying",
   "private": true,
   "scripts": {
     "test": "vitest"
   },
   "devDependencies": {
-    "vitest": "^0.24.0"
-  },
-  "dependencies": {
-    "msw": "^2.12.7"
+    "msw": "^2.12.7",
+    "ofetch": "^1.3.3",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.3",
+    "vue": "^3.3.4"
   }
 }
