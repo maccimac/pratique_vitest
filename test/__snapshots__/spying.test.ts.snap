@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`greeting 2`] = `
+[MockFunction log] {
+  "calls": [
+    [
+      "Hello, Josh",
+    ],
+    [
+      [Circular],
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

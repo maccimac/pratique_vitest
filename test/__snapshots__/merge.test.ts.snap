@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`shallow merge 1`] = `
+{
+  "github": "antfu",
+  "name": "Anthony",
+}
+`;
+
+exports[`shallow merge with overlaps 1`] = `
+{
+  "github": "antfu",
+  "name": "Anthony",
+  "twitter": "antfu7",
+}
+`;
