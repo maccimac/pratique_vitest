@@ -1,21 +1,14 @@
 <script setup>
+
+import { useCycleList} from "./userCycleList"
+
 const items = [
   'apple',
   'banana',
   'orange'
 ]
+const { current, prev, next} = useCycleList(items)
 
-const current = ref(items[0])
-
-function next() {
-  const index = items.indexOf(current.value)
-  current.value = items[(index + 1) % items.length]
-}
-
-function prev() {
-  const index = items.indexOf(current.value)
-  current.value = items[(index - 1 + items.length) % items.length]
-}
 </script>
 
 <template>
