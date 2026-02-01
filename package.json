@@ -6,5 +6,8 @@
   },
   "devDependencies": {
     "vitest": "^0.24.0"
+  },
+  "dependencies": {
+    "msw": "^2.12.7"
   }
 }
