@@ -1,6 +1,6 @@
 <script setup>
 
-import { useCycleList} from "./useCycleList"
+import { useCycleList } from "./useCycleList"
 
 const items = [
   'apple',

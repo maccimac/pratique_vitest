@@ -1,6 +1,22 @@
 import { expect, test } from 'vitest'
-import Example from "../src/Example.vue"
+import { mount } from "@vue/test-utils"
+import ExampleHello from "../src/ExampleHello.vue"
 
-test('import Vue SFC', ()=>{
-    expect(Example).toBeDefined();
+// @vitest-environment happy-dom
+test('sanity check', ()=>{
+    expect(ExampleHello).toBeDefined();
+
+    const wrapper = mount(ExampleHello);
+    expect(wrapper.text()).toBe('Hello !');
+})
+
+
+test('component with props', ()=>{
+    expect(ExampleHello).toBeDefined();
+    const wrapper = mount(ExampleHello, {
+        props: {
+            name: 'Vitest'
+        }
+    });
+    expect(wrapper.text()).toBe('Hello Vitest!');
 })
